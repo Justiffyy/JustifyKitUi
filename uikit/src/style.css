@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Gradient Button Animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.btn-gradient:hover {
+  animation-duration: 1.5s;
+}
+
+/* Glow Button */
+.btn-glow {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 60px rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Glass Button */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Neumorphism Button */
+.btn-neu {
+  background: #e8eaee;
+  box-shadow: 6px 6px 12px #c5c7ca, -6px -6px 12px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn-neu:hover {
+  box-shadow: 4px 4px 8px #c5c7ca, -4px -4px 8px #ffffff;
+}
+
+.btn-neu:active {
+  box-shadow: inset 4px 4px 8px #c5c7ca, inset -4px -4px 8px #ffffff;
+}
+
+/* Pulse Animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
