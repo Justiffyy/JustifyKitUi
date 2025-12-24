@@ -23,11 +23,6 @@ export type InputVariant = 'default' | 'filled' | 'underline' | 'ghost'
 // Badge - 6 varyant  
 export type BadgeVariant = 'solid' | 'outline' | 'soft' | 'dot' | 'gradient' | 'glass'
 
-// Alert - 4 varyant
-export type AlertVariant = 'info' | 'success' | 'warning' | 'error'
-
-// Avatar - 5 boyut
-export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 // Progress - 4 varyant
 export type ProgressVariant = 'default' | 'success' | 'warning' | 'error'
