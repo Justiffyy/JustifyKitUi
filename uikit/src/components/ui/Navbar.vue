@@ -29,7 +29,7 @@ withDefaults(defineProps<Props>(), {
         <div class="flex items-center gap-3">
           <!-- GitHub Link -->
           <a 
-            href="https://github.com" 
+            href="https://github.com/SynkennL/JustifyyUIKit" 
             target="_blank"
             rel="noopener noreferrer"
             class="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"

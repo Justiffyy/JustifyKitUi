@@ -17,10 +17,9 @@ import LayoutShowcase from './components/LayoutShowcase.vue'
     <!-- Hero -->
     <section class="text-center py-8">
       <h1 class="text-3xl font-bold text-slate-900 mb-2">Justify UI</h1>
-      <p class="text-slate-500 mb-4">Modern ve minimal bileşen kütüphanesi</p>
+      <p class="text-slate-500 mb-4">UI Kütüphanesi</p>
       <div class="flex justify-center gap-2 flex-wrap">
         <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full">UI Kit</span>
-        <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-full">14 Bileşen</span>
       </div>
     </section>
 
