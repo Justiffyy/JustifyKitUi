@@ -106,6 +106,10 @@ const alignClasses = computed(() => {
 const isDark = computed(() => props.variant === 'dark')
 
 // Methods
+const openDropdown = (label: string) => {
+    activeDropdown.value = label
+}
+
 const toggleDropdown = (label: string) => {
     activeDropdown.value = activeDropdown.value === label ? null : label
 }
@@ -152,7 +156,7 @@ const getBadgeClass = (variant?: string) => {
         'w-full z-50 transition-all duration-300',
         sticky ? 'sticky top-0' : '',
         variantClasses
-    ]" @mouseleave="closeDropdowns">
+    ]">
         <div :class="['mx-auto px-4 sm:px-6', maxWidthClasses]">
             <div :class="['flex items-center', sizeClasses, alignClasses]">
                 <!-- Brand Slot or Config -->
@@ -172,7 +176,9 @@ const getBadgeClass = (variant?: string) => {
                 <nav class="hidden md:flex items-center gap-1">
                     <slot name="navigation">
                         <template v-if="config?.items">
-                            <div v-for="item in config.items" :key="item.label" class="relative">
+                            <div v-for="item in config.items" :key="item.label" class="relative"
+                                @mouseenter="item.children?.length ? openDropdown(item.label) : null"
+                                @mouseleave="closeDropdowns">
                                 <!-- Dropdown Item -->
                                 <template v-if="item.children?.length">
                                     <button :class="[
@@ -180,7 +186,7 @@ const getBadgeClass = (variant?: string) => {
                                         isDark
                                             ? 'text-slate-300 hover:text-white hover:bg-slate-800'
                                             : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                                    ]" @click="toggleDropdown(item.label)">
+                                    ]">
                                         {{ item.label }}
                                         <!-- Badge -->
                                         <span v-if="item.badge"
