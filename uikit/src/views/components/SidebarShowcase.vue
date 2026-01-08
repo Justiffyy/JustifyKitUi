@@ -124,9 +124,6 @@ const toggleExpand = (label: string) => {
                         </a>
                     </nav>
                 </aside>
-                <main class="flex-1 p-4 bg-slate-50">
-                    <p class="text-sm text-slate-600">Genişletilmiş sidebar (w-64)</p>
-                </main>
             </div>
         </div>
 
@@ -154,9 +151,6 @@ const toggleExpand = (label: string) => {
                         </a>
                     </nav>
                 </aside>
-                <main class="flex-1 p-4 bg-slate-50">
-                    <p class="text-sm text-slate-600">Daraltılmış sidebar (w-16)</p>
-                </main>
             </div>
         </div>
 
