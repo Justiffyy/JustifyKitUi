@@ -90,7 +90,7 @@ const toggleExpand = (label: string) => {
                             'block px-3 py-2 rounded-lg text-sm',
                             rightActiveItem === item.label
                                 ? 'bg-indigo-600 text-white font-medium'
-                                : 'text-slate-600 hover:bg-slate-100'
+                                : 'text-slate-900 hover:bg-slate-100'
                         ]" @click.prevent="rightActiveItem = item.label">
                             {{ item.label }}
                         </a>
@@ -118,7 +118,7 @@ const toggleExpand = (label: string) => {
                             'block px-3 py-2 rounded-lg text-sm',
                             idx === 0
                                 ? 'bg-indigo-600 text-white font-medium'
-                                : 'text-slate-600 hover:bg-slate-100'
+                                : 'text-slate-900 hover:bg-slate-100'
                         ]">
                             {{ item.label }}
                         </a>
@@ -145,7 +145,7 @@ const toggleExpand = (label: string) => {
                             'flex items-center justify-center p-2 rounded-lg text-xs',
                             idx === 0
                                 ? 'bg-indigo-600 text-white font-medium'
-                                : 'text-slate-600 hover:bg-slate-100'
+                                : 'text-slate-900 hover:bg-slate-100'
                         ]" :title="item.label">
                             {{ item.label.charAt(0) }}
                         </a>
@@ -169,7 +169,7 @@ const toggleExpand = (label: string) => {
                                 'block px-3 py-2 rounded-lg text-sm',
                                 dropdownActiveItem === item.label
                                     ? 'bg-indigo-600 text-white font-medium'
-                                    : 'text-slate-600 hover:bg-slate-100'
+                                    : 'text-slate-900 hover:bg-slate-100'
                             ]" @click.prevent="dropdownActiveItem = item.label">
                                 {{ item.label }}
                             </a>
