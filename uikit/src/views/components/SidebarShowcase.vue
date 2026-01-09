@@ -221,7 +221,7 @@ const toggleExpand = (label: string) => {
             <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Floating Sidebar</p>
             <div class="flex rounded-xl overflow-hidden h-64 bg-slate-200 p-4">
                 <aside class="w-48 bg-white rounded-xl shadow-lg flex flex-col mr-4">
-                    <div class="p-3 border-b border-slate-100">
+                    <div class="p-2 border-b border-slate-100">
                         <span class="font-semibold text-slate-800 text-sm">Menu</span>
                     </div>
                     <nav class="flex-1 p-2 space-y-1">
