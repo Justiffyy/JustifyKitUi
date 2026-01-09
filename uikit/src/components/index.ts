@@ -15,6 +15,7 @@ export { default as JIcon } from './core/JIcon.vue'
 export { default as JNavbar } from './ui/JNavbar.vue'
 export { default as JFooter } from './ui/JFooter.vue'
 export { default as JSubNavbar } from './ui/JSubNavbar.vue'
+export { default as JSidebar } from './ui/JSidebar.vue'
 
 // Playground Layout
 export { default as Navbar } from './ui/Navbar.vue'
