@@ -52,6 +52,10 @@ import { JIcon } from '@/components'
                     <JIcon name="settings" class="w-6 h-6" />
                     <span class="text-xs text-slate-500">settings</span>
                 </div>
+                <div class="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-slate-100 transition-colors">
+                    <JIcon name="moon" class="w-6 h-6" />
+                    <span class="text-xs text-slate-500">moon</span>
+                </div>
             </div>
         </div>
 
