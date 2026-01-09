@@ -61,7 +61,7 @@ const toggleExpand = (label: string) => {
                         <a v-for="item in menuItems" :key="item.label" href="#" :class="[
                             'block px-3 py-2 rounded-lg text-sm',
                             leftActiveItem === item.label
-                                ? 'bg-indigo-600 text-white font-medium'
+                                ? 'bg-slate-900 text-white font-medium'
                                 : 'text-slate-600 hover:bg-slate-100'
                         ]" @click.prevent="leftActiveItem = item.label">
                             {{ item.label }}
@@ -89,7 +89,7 @@ const toggleExpand = (label: string) => {
                         <a v-for="item in menuItems" :key="item.label" href="#" :class="[
                             'block px-3 py-2 rounded-lg text-sm',
                             rightActiveItem === item.label
-                                ? 'bg-indigo-600 text-white font-medium'
+                                ? 'bg-slate-900 text-white font-medium'
                                 : 'text-slate-900 hover:bg-slate-100'
                         ]" @click.prevent="rightActiveItem = item.label">
                             {{ item.label }}
@@ -102,7 +102,7 @@ const toggleExpand = (label: string) => {
         <!-- Genişletilmiş Sidebar -->
         <div class="p-6 bg-slate-100 rounded-xl space-y-4">
             <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Genişletilmiş Sidebar</p>
-            <div class="flex rounded-xl border border-slate-300 overflow-hidden h-56 bg-white">
+            <div class="flex rounded-xl border border-slate-300 overflow-hidden h-62 bg-white">
                 <aside class="w-64 bg-white border-r border-slate-200 flex flex-col">
                     <div class="flex items-center justify-between p-4 border-b border-slate-100">
                         <span class="font-semibold text-slate-900 text-sm">Menu</span>
@@ -120,7 +120,7 @@ const toggleExpand = (label: string) => {
                         <a v-for="(item, idx) in menuItems" :key="item.label" href="#" :class="[
                             'block px-3 py-2 rounded-lg text-sm',
                             idx === 0
-                                ? 'bg-indigo-600 text-white font-medium'
+                                ? 'bg-slate-900 text-white font-medium'
                                 : 'text-slate-900 hover:bg-slate-100'
                         ]">
                             {{ item.label }}
@@ -150,7 +150,7 @@ const toggleExpand = (label: string) => {
                         <a v-for="(item, idx) in menuItems" :key="item.label" href="#" :class="[
                             'flex items-center justify-center p-2 rounded-lg text-xs',
                             idx === 0
-                                ? 'bg-indigo-600 text-white font-medium'
+                                ? 'bg-slate-900 text-white font-medium'
                                 : 'text-slate-900 hover:bg-slate-100'
                         ]" :title="item.label">
                             {{ item.label.charAt(0) }}
@@ -163,7 +163,7 @@ const toggleExpand = (label: string) => {
         <!-- Dropdown Sidebar -->
         <div class="p-6 bg-slate-100 rounded-xl space-y-4">
             <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Dropdown Sidebar</p>
-            <div class="flex rounded-xl border border-slate-300 overflow-hidden h-72 bg-white">
+            <div class="flex rounded-xl border border-slate-300 overflow-hidden h-52 bg-white">
                 <aside class="w-52 bg-white border-r border-slate-200 flex flex-col">
                     <div class="p-3 border-b border-slate-200">
                         <span class="font-semibold text-slate-800 text-sm">Menu</span>
@@ -174,7 +174,7 @@ const toggleExpand = (label: string) => {
                             <a v-if="!item.children" href="#" :class="[
                                 'block px-3 py-2 rounded-lg text-sm',
                                 dropdownActiveItem === item.label
-                                    ? 'bg-indigo-600 text-white font-medium'
+                                    ? 'bg-slate-900 text-white font-medium'
                                     : 'text-slate-900 hover:bg-slate-100'
                             ]" @click.prevent="dropdownActiveItem = item.label">
                                 {{ item.label }}
@@ -200,7 +200,7 @@ const toggleExpand = (label: string) => {
                                     <a v-for="child in item.children" :key="child.label" href="#" :class="[
                                         'block px-3 py-1.5 rounded-lg text-sm',
                                         dropdownActiveItem === child.label
-                                            ? 'bg-indigo-600 text-white font-medium'
+                                            ? 'bg-slate-900 text-white font-medium'
                                             : 'text-slate-500 hover:bg-slate-100'
                                     ]" @click.prevent="dropdownActiveItem = child.label">
                                         {{ child.label }}
@@ -228,7 +228,7 @@ const toggleExpand = (label: string) => {
                         <a v-for="item in menuItems" :key="item.label" href="#" :class="[
                             'block px-3 py-2 rounded-lg text-sm',
                             floatingActiveItem === item.label
-                                ? 'bg-indigo-600 text-white font-medium'
+                                ? 'bg-slate-900 text-white font-medium'
                                 : 'text-slate-600 hover:bg-slate-100'
                         ]" @click.prevent="floatingActiveItem = item.label">
                             {{ item.label }}
