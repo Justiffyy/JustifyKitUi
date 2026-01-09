@@ -45,7 +45,7 @@ const toggleExpand = (label: string) => {
 <template>
     <section class="space-y-6">
         <div class="flex items-center gap-3">
-            <h2 class="text-xl font-semibold text-slate-900">Sidebar</h2>
+            <h2 class="text-xl font-semibold text-white">Sidebar</h2>
             <span class="text-xs text-slate-400">Yan Menü Komponenti</span>
         </div>
 
