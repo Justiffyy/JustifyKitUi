@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { Navbar, Footer } from '@/components'
+import { Footer } from '@/components'
 
 interface Props {
     title?: string
@@ -29,23 +29,11 @@ const widthClass = computed(() => {
 })
 
 const toggle = () => isCollapsed.value = !isCollapsed.value
-const toggleMobile = () => isMobileOpen.value = !isMobileOpen.value
 const closeMobile = () => isMobileOpen.value = false
 </script>
 
 <template>
     <div class="min-h-screen flex flex-col bg-slate-900">
-        <!-- Navbar -->
-        <Navbar v-if="showNavbar" :title="title">
-            <template #left>
-                <button class="lg:hidden p-2 rounded-lg text-slate-400 hover:bg-slate-700" @click="toggleMobile">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </template>
-        </Navbar>
 
         <div class="flex flex-1">
             <!-- Mobile Overlay -->
@@ -53,8 +41,8 @@ const closeMobile = () => isMobileOpen.value = false
 
             <!-- Sidebar -->
             <aside :class="[
-                'fixed lg:static inset-y-0 z-50 bg-slate-800 border-r border-slate-700 flex flex-col transition-all duration-300',
-                sidebarPosition === 'left' ? 'left-0' : 'right-0',
+                'fixed lg:static inset-y-0 z-50 bg-slate-800 flex flex-col transition-all duration-300',
+                sidebarPosition === 'left' ? 'left-0 border-r border-slate-700' : 'right-0 border-l border-slate-700 order-last',
                 widthClass,
                 isMobileOpen ? 'translate-x-0' : (sidebarPosition === 'left' ? '-translate-x-full lg:translate-x-0' : 'translate-x-full lg:translate-x-0')
             ]" :style="{ top: showNavbar ? '64px' : '0' }">

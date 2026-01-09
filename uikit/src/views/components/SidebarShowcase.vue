@@ -79,9 +79,6 @@ const handleFloatingSelect = (item: { label: string }) => {
         <div class="p-6 bg-slate-100 rounded-xl space-y-4">
             <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Sağ Sidebar</p>
             <div class="flex rounded-xl border border-slate-300 overflow-hidden h-56 bg-white">
-                <main class="flex-1 p-4 bg-slate-50">
-                    <p class="text-sm text-slate-600">{{ rightContent }} içeriği</p>
-                </main>
                 <JSidebar 
                     :items="menuItems" 
                     position="right"
@@ -90,6 +87,9 @@ const handleFloatingSelect = (item: { label: string }) => {
                     default-active="Dashboard"
                     @select="handleRightSelect"
                 />
+                <main class="flex-1 p-4 bg-slate-50">
+                    <p class="text-sm text-slate-600">{{ rightContent }} içeriği</p>
+                </main>
             </div>
         </div>
 
@@ -104,7 +104,10 @@ const handleFloatingSelect = (item: { label: string }) => {
                     title="Menu"
                     default-active="Dashboard"
                 />
-            </div>
+                <main class="flex-1 p-4 bg-slate-50">
+                    <p class="text-sm text-slate-600">Ana içerik alanı</p>
+                </main>
+            </div>  
         </div>
 
         <!-- Daraltılmış Sidebar -->
@@ -118,6 +121,9 @@ const handleFloatingSelect = (item: { label: string }) => {
                     title="Menu"
                     default-active="Dashboard"
                 />
+                <main class="flex-1 p-4 bg-slate-50">
+                    <p class="text-sm text-slate-600">Ana içerik alanı</p>
+                </main>
             </div>
         </div>
 
