@@ -97,7 +97,7 @@ const handleMouseLeave = () => {
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
                         <span class="text-slate-200">Justify UI Kit</span>
                         <br />
-                        <span class="text-slate-500">Modern Components</span>
+                        <span class="text-slate-500">Components</span>
                     </h1>
 
                     <p class="text-lg text-slate-400 leading-relaxed max-w-lg mx-auto lg:mx-0">
