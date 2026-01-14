@@ -5,6 +5,7 @@ import { MainLayout } from '@/layouts'
 import { JButton, JCard, JBadge } from '@/components'
 
 const router = useRouter()
+const currentYear = new Date().getFullYear()
 
 // Tilt Card Refs
 const cardRef = ref<HTMLElement | null>(null)
@@ -289,7 +290,7 @@ const handleMouseLeave = () => {
 
             <!-- Footer -->
             <footer class="relative z-10 py-6 text-center text-slate-500 text-sm border-t border-slate-800">
-                <p>© 2025 Justify UI Kit. Designed for developers.</p>
+                <p>© {{ currentYear }} Justify UI Kit</p>
             </footer>
         </div>
     </MainLayout>
