@@ -215,7 +215,7 @@ const handleMouseLeave = () => {
                                     <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <span>20+ Vue.js Bileşeni</span>
+                                <span>20+ Bileşen</span>
                             </li>
                             <li class="flex items-center gap-3 text-slate-300 border-b border-slate-700/50 pb-4">
                                 <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 text-green-500 flex-shrink-0">
