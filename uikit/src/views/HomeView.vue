@@ -24,7 +24,7 @@ const openGitHub = () => {
 const faqs = ref([
     {
         question: 'Justify UI Kit nedir?',
-        answer: 'Justify UI Kit, Vue.js için tasarlanmış modern ve özelleştirilebilir bir bileşen kütüphanesidir. Projelerinizi hızla geliştirmenizi sağlar.',
+        answer: 'Justify UI Kit, tasarımlanmış modern ve özelleştirilebilir bir bileşen kütüphanesidir. Projelerinizi hızla geliştirmenizi sağlar.',
         isOpen: false
     },
     {
